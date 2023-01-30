@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
    WifiOverlay \
    NotchBarKiller \
    NoCutoutOverlay \
+   ApertureOverlay \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
