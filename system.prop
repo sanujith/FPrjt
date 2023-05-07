@@ -58,6 +58,9 @@ ro.vendor.display.svi=1
 # DPM
 persist.dpm.feature=1
 
+# Initialize QCA1530 detection
+sys.qca1530=detect
+
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
