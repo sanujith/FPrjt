@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 The AospExtended Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="dlg_ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="reset">Сброс</string>
+    <string name="reset_message">Сбросить все значения на по умолчанию?</string>
+    <string name="group_applications">Приложения</string>
+    <string name="select_custom_app_title">Выберите пользовательское приложение</string>
+    <string name="gestures_dashboard_summary">Жесты на выключенном экране</string>
+    <string name="enable_gestures_title">Включить жесты</string>
+    <string name="enable_gestures_summary">Жесты выключенного экрана</string>
+    <string name="gestures_title">Жесты</string>
+    <string name="gesture_double_tap_title">Действие для двойного касания</string>
+    <string name="gesture_w_title">Нарисуйте W</string>	
+    <string name="gesture_m_title">Нарисуйте М</string>
+    <string name="gesture_s_title">Нарисуйте С</string>
+    <string name="gesture_circle_title">Нарисуйте круг</string>
+    <string name="gesture_two_swipe_title">Сделайте два свайпа</string>
+    <string name="gesture_up_arrow_title">Нарисуйте угол вверх</string>
+    <string name="gesture_down_arrow_title">Нарисуйте угол вниз</string>
+    <string name="gesture_left_arrow_title">Нарисуйте угол влево</string>
+    <string name="gesture_right_arrow_title">Нарисуйте угол вправо</string>
+    <string name="gesture_swipe_up_title">Проведите вверх</string>
+    <string name="gesture_swipe_down_title">Проведите вниз</string>
+    <string name="gesture_swipe_left_title">Проведите влево</string>
+    <string name="gesture_swipe_right_title">Проведите вправо</string>
+    <string name="RealmeParts">realme Settings</string>
+    <string name="RealmeParts_summary">Твики для вашего реалмеме</string>
+    <string name="screen_off_gestures">Жесты выключенного экрана</string>
+    <string name="gestures">Жесты</string>
+    <string name="enable_dt2w_title">Двойное касание</string>
+    <string name="enable_dt2w_summary">Использовать двойное касание для действия</string>
+    <string name="dt2w_title">Двойное касание</string>
+    <string name="haptic_feedback_title">Вибрация</string>
+
+    <!-- Shortcut actions -->
+    <string name="action_none">Ничего не делать</string>
+    <string name="action_app">Пользовательское приложение</string>
+    <string name="action_home">Дом</string>
+    <string name="action_back">Назад</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_ime">Откройте переключатель IME</string>
+    <string name="action_power_menu">Меню питания</string>
+    <string name="action_recent">Недавний</string>
+    <string name="action_power">Отключения экрана</string>
+    <string name="action_search">Поиск в приложении</string>
+    <string name="action_now_on_tap">Теперь на кране</string>
+    <string name="action_ring_vib">Звук/Вибрация</string>
+    <string name="action_ring_silent">Звук/Без звука</string>
+    <string name="action_ring_vib_silent">Звук/Вибрация/Без звука</string>
+    <string name="action_camera">Камера</string>
+    <string name="action_media_next">Музыка - следующий трек</string>
+    <string name="action_media_play_pause">Музыка - воспроизведение/пауза</string>
+    <string name="action_media_previous">Музыка - предыдущий трек</string>
+    <string name="action_wake_device">Пробудить устройство</string>
+    <string name="action_kill">Убить приложение</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_lastapp">Последнее приложение</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_qs">Панель быстрых настроек</string>
+    <string name="action_torch">Фонарик</string>
+    <string name="action_longpress">Длинное нажатие:</string>
+    <string name="action_select_action_longpress">Выберите действие длительного нажатия:</string>
+    <string name="action_select_action">Выбрать действие:</string>
+    <string name="action_select_action_newaction">Выберите новое действие:</string>
+    <string name="action_reset">Сбросить</string>
+    <string name="action_add">Добавлять</string>
+    <string name="action_reset_message">Сбросить все значения на по умолчанию?</string>
+    <string name="action_max">Достигнут максимальный размер записей</string>
+    <string name="action_warning">Предупреждение</string>
+    <string name="action_warning_message">Невозможно удалить последнюю запись</string>
+    <string name="action_required_warning_message">Невозможно удалить нужные кнопки</string>
+    <string name="action_disable_message">Отключено\nДобавьте запись, чтобы включить эту функцию</string>
+    <string name="shortcut_image_not_valid">Выбранное приложение не вернуло допустимый значок или не поддерживает кадрирование изображения. Используйте другое приложение.</string>
+    <string name="shortcut_duplicate_entry">Выбранное действие нельзя добавить дважды</string>
+    <string name="action_help_shortcut">ярлык</string>
+    <string name="action_help_button">кнопка</string>
+    <string name="action_help_app">приложение</string>
+    <string name="action_help_icon">, при выборе значка отобразятся параметры настройки</string>
+    <string name="action_help_main">Чтобы добавить %1$s, выберите значок «Добавить». После добавления %1$s выбор строки изменит цель %2$s\n\nЧтобы удалить %1$s, проведите по строке горизонтально влево или вправо. Измените порядок %1$s в списке, вертикально перетащив якорь слева.\n\nЧтобы очистить или восстановить значения по умолчанию, выберите параметр сброса.</string>
+
+    <!-- Device specific settings -->
+    <string name="screen_off_gesture_settings_title">Жесты на выключенном экране</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_title">Ambient дисплей</string>
+    <string name="ambient_display_enable_title">Ambient дисплей</string>
+    <string name="ambient_display_enable_summary">Активация экрана при получении уведомлений</string>
+    <string name="ambient_display_gestures_title">Ambient дисплей</string>
+    <string name="ambient_display_gestures_summary">Взаимодействие с Ambient дисплеем</string>
+    <string name="ambient_display_summary">Активация экрана при получении уведомлений</string>
+    <string name="ambient_display_summary_on">Экран проснется, когда вы получите уведомления</string>
+    <string name="ambient_display_summary_off">Экран не будет просыпаться, когда вы получаете уведомления</string>
+    <string name="ambient_display_always_on_title">Экран всегда включен</string>
+    <string name="ambient_display_always_on_summary">Показывать время, значки уведомлений и другую информацию. Повышенное использование батареи.</string>
+
+    <!-- Tilt sensor -->
+    <string name="tilt_sensor_title">Датчик наклона</string>
+
+    <!-- Pickup sensor -->
+    <string name="pickup_sensor_title">Акселерометр</string>
+
+    <!-- Proximity sensor -->
+    <string name="proximity_sensor_title">Датчик приближения</string>
+
+    <!-- Hand wave gesture -->
+    <string name="hand_wave_gesture_title">Провести рукой</string>
+    <string name="hand_wave_gesture_summary">Показать уведомления по взмаху руки</string>
+    <string name="hand_wave_gesture_flat_title">Определить ориентацию</string>
+    <string name="hand_wave_gesture_flat_summary">Импульсный режим, только если телефон лежит лицевой стороной вверх на плоской поверхности.</string>
+
+    <!-- Pick-up gesture -->
+    <string name="pick_up_gesture_title">Обнаруживать приподнятие</string>
+    <string name="pick_up_gesture_summary">Показать уведомления при приподнятии устройства</string>
+
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title">Режим кармана</string>
+    <string name="pocket_gesture_summary">Показать уведомления при доставании из кармана</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Пробуждение от приближения</string>
+    <string name="proximity_wake_enable_title">Пробуждение от датчика приближения</string>
+    <string name="proximity_wake_enable_summary">Устройство пробуждается по взмаху руки</string>
+
+    <!-- Dialog texts -->
+    <string name="dialog_ok">Ок</string>
+
+    <!-- Help texts -->
+    <string name="doze_settings_help_title">Помощь</string>
+    <string name="doze_settings_help_text">Эти настройки используют датчики для показа уведомлений. Требуемый датчик включается только тогда, когда устройство получает уведомление, это экономит заряд батареи. Также можно включить выбранный датчик сразу, как только экран выключится, но это увеличит расход заряда батареи.</string>
+
+    <!-- Label for feature switch  -->
+    <string name="switch_bar_on">На</string>
+
+    <!-- Label for feature switch -->
+    <string name="switch_bar_off">Выключенный</string>
+
+    <!-- Device specific settings -->
+    <string name="device_settings_app_name">Расширенные настройки</string>
+
+    <!-- Device gestures panel -->
+    <string name="screen_gestures_panel_title">Жесты</string>
+
+    <!-- Ambient gesture haptic feedback -->
+    <string name="ambient_gesture_extras">Дополнительно</string>
+    <string name="ambient_gesture_haptic_feedback">Вибрация</string>
+    <string name="ambient_gesture_haptic_feedback_summary">Вибрировать при обнаружении жеста на Ambient дисплее</string>
+
+    <!-- Touchscreen gesture haptic feedback -->
+    <string name="touchscreen_gesture_haptic_feedback">Вибрация</string>
+    <string name="touchscreen_gesture_haptic_feedback_summary">Вибрировать при обнаружении жеста на выключенном экране</string>
+
+    <!-- Vibration Slider -->
+    <string name="vibrator_intensity_control">Контроль вибрации</string>
+
+    <!-- Raise to wake strings-->
+    <string name="raise_to_wake_gesture_title">Пробуждение при приподнятии</string>
+    <string name="raise_to_wake_gesture_summary">Только разбудите устройство при приподнятии</string>
+  
+    <!-- OTG strings-->
+    <string name="otg_title">Включить OTG</string>
+    <string name="otg_summary">Включает USB-OTG</string>
+
+    <!-- Double Tap to check phone  strings-->
+    <string name="double_tap_gesture_title">Двойное касание для проверки телефона</string>
+    <string name="double_tap_gesture_summary">Нажмите дважды чтобы показать уведомления</string>
+</resources>
