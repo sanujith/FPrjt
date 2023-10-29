@@ -22,6 +22,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BOARD_PLATFORM := atoll
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+
 # Android GO
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
