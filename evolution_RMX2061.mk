@@ -17,7 +17,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_DISABLE_EPPE := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
-EVO_BUILD_TYPE := OFFICIAL
+#EVO_BUILD_TYPE := OFFICIAL
 
 # Inherit some common stuff
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
