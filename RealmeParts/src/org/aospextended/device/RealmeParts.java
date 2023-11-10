@@ -105,7 +105,7 @@ public class RealmeParts extends PreferenceFragment implements
         });
 
         mOTG = (SwitchPreference) findPreference(PREF_OTG);
-        mOTG.setChecked(mPrefs.getBoolean(PREF_OTG, false));
+        mOTG.setChecked(mPrefs.getBoolean(PREF_OTG, true));
         mOTG.setOnPreferenceChangeListener(this);
 
 /*        PreferenceCategory vib_strength = (PreferenceCategory) getPreferenceScreen()
