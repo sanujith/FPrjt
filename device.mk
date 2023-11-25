@@ -182,7 +182,7 @@ PRODUCT_COPY_FILES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -535,9 +535,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3.vendor \
     android.hardware.graphics.composer@2.4.vendor \
     android.hardware.health.storage@1.0.vendor \
-    android.hardware.health@1.0.vendor \
-    android.hardware.health@2.0.vendor \
-    android.hardware.health@2.1.vendor \
     android.hardware.input.classifier@1.0.vendor \
     android.hardware.input.common@1.0.vendor \
     android.hardware.ir@1.0.vendor \
