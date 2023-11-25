@@ -85,12 +85,6 @@ on post-fs-data
     mkdir /tombstones/lpass 0771 system system
     mkdir /tombstones/wcnss 0771 system system
     mkdir /tombstones/dsps 0771 system system
-    #ifdef OPLUS_FEATURE_DOLBY
-    #LinJunqian@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby
-    mkdir /data/vendor/dolby 0770 media media
-    #WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/10/29, add for dolby Rom update
-    mkdir /data/vendor/multimedia 0775 system system
-    #endif /* OPLUS_FEATURE_DOLBY */
 #ifdef OPLUS_FEATURE_TP_BASIC
 #Cong.Dai@psw.bsp.tp 2018/03/12 del for closing hbtp
     #mkdir /data/vendor/hbtp 0750 system system
