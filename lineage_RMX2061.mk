@@ -19,11 +19,11 @@ TARGET_DISABLE_EPPE := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 #EVO_BUILD_TYPE := OFFICIAL
 
-# Inherit some common stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := evolution_RMX2061
+PRODUCT_NAME := lineage_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
