@@ -37,7 +37,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.aospextended.device.R;
 import org.aospextended.device.util.Utils;
@@ -49,13 +49,13 @@ public class DozeSettingsFragment extends PreferenceFragment implements
 
     private MainSwitchPreference mSwitchBar;
 
-    private SwitchPreference mAlwaysOnDisplayPreference;
+    private SwitchPreferenceCompat mAlwaysOnDisplayPreference;
 
-    private SwitchPreference mPickUpPreference;
-    private SwitchPreference mHandwavePreference;
-    private SwitchPreference mPocketPreference;
-    private SwitchPreference mRaiseToWakePreference;
-    private SwitchPreference mDoubleTapPreference;
+    private SwitchPreferenceCompat mPickUpPreference;
+    private SwitchPreferenceCompat mHandwavePreference;
+    private SwitchPreferenceCompat mPocketPreference;
+    private SwitchPreferenceCompat mRaiseToWakePreference;
+    private SwitchPreferenceCompat mDoubleTapPreference;
 
     private Handler mHandler = new Handler();
 
@@ -75,7 +75,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements
         mSwitchBar.addOnSwitchChangeListener(this);
         mSwitchBar.setChecked(dozeEnabled);
 
-        mAlwaysOnDisplayPreference = (SwitchPreference) findPreference(DozeUtils.ALWAYS_ON_DISPLAY);
+        mAlwaysOnDisplayPreference = (SwitchPreferenceCompat) findPreference(DozeUtils.ALWAYS_ON_DISPLAY);
         mAlwaysOnDisplayPreference.setEnabled(dozeEnabled);
         mAlwaysOnDisplayPreference.setChecked(DozeUtils.isAlwaysOnEnabled(getActivity()));
         mAlwaysOnDisplayPreference.setOnPreferenceChangeListener(this);
@@ -85,23 +85,23 @@ public class DozeSettingsFragment extends PreferenceFragment implements
         PreferenceCategory proximitySensorCategory = (PreferenceCategory) getPreferenceScreen().
                 findPreference(DozeUtils.CATEG_PROX_SENSOR);
 
-        mPickUpPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_PICK_UP_KEY);
+        mPickUpPreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_PICK_UP_KEY);
         mPickUpPreference.setEnabled(dozeEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
 
-        mDoubleTapPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_DOUBLE_TAP);
+        mDoubleTapPreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_DOUBLE_TAP);
         mDoubleTapPreference.setEnabled(dozeEnabled);
         mDoubleTapPreference.setOnPreferenceChangeListener(this);
 
-        mRaiseToWakePreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_RAISE_TO_WAKE_KEY);
+        mRaiseToWakePreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_RAISE_TO_WAKE_KEY);
         mRaiseToWakePreference.setEnabled(dozeEnabled);
         mRaiseToWakePreference.setOnPreferenceChangeListener(this);
 
-        mHandwavePreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_HAND_WAVE_KEY);
+        mHandwavePreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
 
-        mPocketPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_POCKET_KEY);
+        mPocketPreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_POCKET_KEY);
         mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
 

@@ -36,7 +36,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference.OnPreferenceClickListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.aospextended.device.util.Action;
 import org.aospextended.device.util.Utils;
@@ -91,9 +91,9 @@ public class TouchGestures extends PreferenceFragment implements
     private Preference mGestureSwipeLeft;
     private Preference mGestureSwipeRight;
 
-    private SwitchPreference mEnableDt2w;
-    private SwitchPreference mEnableGestures;
-    private SwitchPreference mHapticFeedback;
+    private SwitchPreferenceCompat mEnableDt2w;
+    private SwitchPreferenceCompat mEnableGestures;
+    private SwitchPreferenceCompat mHapticFeedback;
 
     private boolean mCheckPreferences;
     private SharedPreferences mPrefs;
@@ -150,13 +150,13 @@ public class TouchGestures extends PreferenceFragment implements
         prefs = getPreferenceScreen();
 
         PreferenceCategory dt2w = (PreferenceCategory) prefs.findPreference("dt2w");
-        mEnableDt2w = (SwitchPreference) prefs.findPreference(PREF_DT2W_ENABLE);
+        mEnableDt2w = (SwitchPreferenceCompat) prefs.findPreference(PREF_DT2W_ENABLE);
 
         PreferenceCategory gestures = (PreferenceCategory) prefs.findPreference("gestures");
-        mEnableGestures = (SwitchPreference) prefs.findPreference(PREF_GESTURE_ENABLE);
+        mEnableGestures = (SwitchPreferenceCompat) prefs.findPreference(PREF_GESTURE_ENABLE);
 
         PreferenceCategory haptic = (PreferenceCategory) prefs.findPreference("haptic");
-        mHapticFeedback = (SwitchPreference) findPreference(KEY_GESTURE_HAPTIC_FEEDBACK);
+        mHapticFeedback = (SwitchPreferenceCompat) findPreference(KEY_GESTURE_HAPTIC_FEEDBACK);
         mHapticFeedback.setChecked(mPrefs.getInt(Utils.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0);
         mHapticFeedback.setOnPreferenceChangeListener(this);
 

@@ -36,7 +36,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.TwoStatePreference;
 
 import org.aospextended.device.gestures.TouchGestures;
@@ -70,7 +70,7 @@ public class RealmeParts extends PreferenceFragment implements
 
     private Preference mDozePref;
     private Preference mGesturesPref;
-    private SwitchPreference mOTG;
+    private SwitchPreferenceCompat mOTG;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -104,7 +104,7 @@ public class RealmeParts extends PreferenceFragment implements
             }
         });
 
-        mOTG = (SwitchPreference) findPreference(PREF_OTG);
+        mOTG = (SwitchPreferenceCompat) findPreference(PREF_OTG);
         mOTG.setChecked(mPrefs.getBoolean(PREF_OTG, true));
         mOTG.setOnPreferenceChangeListener(this);
 
