@@ -307,6 +307,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Parts
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Perfd
 PRODUCT_PACKAGES += \
     libqti-perfd-client
